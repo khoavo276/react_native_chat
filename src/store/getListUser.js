@@ -18,7 +18,6 @@ const slice = createSlice({
 export default slice.reducer;
 
 // Actions
-
 const {getUserSuccess} = slice.actions;
 
 export const getListUser = () => async (dispatch) => {

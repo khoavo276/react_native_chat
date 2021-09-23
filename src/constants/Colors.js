@@ -206,6 +206,6 @@ export default {
   grey85: '#dadada',
   grey89: '#e4e4e4',
   grey93: '#eeeeee',
-  main: '#E94057',
+  main: '#009387',
   border: '#E8E6EA',
 };
