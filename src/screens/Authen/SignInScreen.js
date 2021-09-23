@@ -29,7 +29,7 @@ const SignInScreen = ({navigation}) => {
     handleChange,
     handleSubmit,
     handleBlur,
-    values,
+    // values,
     errors,
     touched,
   } = useFormik({
@@ -72,7 +72,7 @@ const SignInScreen = ({navigation}) => {
         <View style={styles.action}>
           <FontAwesome name="user-o" color={Colors.black} size={20} />
           <TextInput
-            placeholder="Your Email"
+            placeholder="Email"
             placeholderTextColor="#666666"
             style={[
               styles.textInput,
@@ -106,7 +106,7 @@ const SignInScreen = ({navigation}) => {
         <View style={styles.action}>
           <Feather name="lock" color={Colors.black} size={20} />
           <TextInput
-            placeholder="Your Password"
+            placeholder="Password"
             placeholderTextColor="#666666"
             secureTextEntry={secureTextEntry ? true : false}
             style={[
@@ -160,7 +160,7 @@ const SignInScreen = ({navigation}) => {
           </TouchableOpacity>
 
           <TouchableOpacity
-            // onPress={() => navigation.navigate('SignUpScreen')}
+            onPress={() => navigation.navigate('SignUpScreen')}
             style={[
               styles.signIn,
               {
