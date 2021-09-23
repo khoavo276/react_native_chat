@@ -119,7 +119,6 @@ const SignInScreen = ({navigation}) => {
             onBlur={handleBlur('password')}
             onChangeText={handleChange('password')}
             touched={touched.password}
-            // onChangeText={(val) => handlePasswordChange(val)}
           />
           <TouchableOpacity onPress={updateSecureTextEntry}>
             {secureTextEntry ? (
@@ -237,7 +236,7 @@ const styles = StyleSheet.create({
     color: '#05375a',
   },
   errorMsg: {
-    color: Colors.main,
+    color: Colors.red,
     fontSize: 14,
   },
   button: {
