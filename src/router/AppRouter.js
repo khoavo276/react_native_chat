@@ -4,12 +4,14 @@ import BottomTabs from './TabRouter';
 import DetailsScreen from '../screens/Details';
 import SignInScreen from '../screens/Authen/SignInScreen';
 import SignUpScreen from '../screens/Authen/SignUpScreen';
+import SplashScreen from '../screens/SplashScreen';
 
 const Stack = createStackNavigator();
 
 const AppRouter = () => {
   return (
-    <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Navigator screenOptions={{headerShown: false}} >
+       <Stack.Screen name={'SplashScreen'} component={SplashScreen} />
       <Stack.Screen name={'SignInScreen'} component={SignInScreen} />
       <Stack.Screen name={'SignUpScreen'} component={SignUpScreen} />
       <Stack.Screen name={'Home'} component={BottomTabs} />

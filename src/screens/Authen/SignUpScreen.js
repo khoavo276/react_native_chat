@@ -92,7 +92,7 @@ const SignInScreen = ({navigation}) => {
             style={[
               styles.text_footer,
               {
-                marginTop: 35,
+                marginTop: 15,
               },
             ]}>
             Password
@@ -127,7 +127,7 @@ const SignInScreen = ({navigation}) => {
             style={[
               styles.text_footer,
               {
-                marginTop: 35,
+                marginTop: 15,
               },
             ]}>
             Confirm Password
@@ -264,7 +264,7 @@ const styles = StyleSheet.create({
   },
   button: {
     alignItems: 'center',
-    marginTop: 50,
+    marginTop: 30,
   },
   signIn: {
     width: '100%',
